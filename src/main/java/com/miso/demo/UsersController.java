@@ -33,7 +33,7 @@ public class UsersController {
     }
     
     // Below getUser() method to handle request which requires specific info with parameter passed
-    // Query parameter used to filter the data and Path parameter is used to get specific data
+    // Query parameter is used to filter the data and Path parameter is used to get specific data
     @GetMapping(path="/{userID}")
     public String getUser(@PathVariable String userID){
         return "http GET request was sent for userID: "+userID;
