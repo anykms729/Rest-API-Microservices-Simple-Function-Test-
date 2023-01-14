@@ -1,10 +1,10 @@
 This repo is all about RESTful API using Spring Boot
 
-< What is RESTful API? >
+< What is RESTful API >
 REST, an abbreviation of Representational State Transfer, is an architecture that can properly utilize the advantages of the web and the excellence of HTTP. It means that a resource is specified through an HTTP URI and the CRUD operation (Four basic actions that a software program should be able to do including Create, Read, Update, and Delete) of the specified resource is applied through an HTTP method (POST, GET, PUT, DELETE).
 Therefore, REST may be thought of as an architecture made up of Resources, Verbs, and Representations. The use of REST increases code reusability and allows for a complete separation of work between the frontend and the backend.
 
-< Representation in HTTP? >
+< Representation in HTTP >
 For example, there's request & response from the server as below.
 
   - Client Request Example:
