@@ -1,19 +1,19 @@
 This repo is all about RESTful API using Spring Boot
 
-1) What is RESTful API?
+< What is RESTful API? >
 REST, an abbreviation of Representational State Transfer, is an architecture that can properly utilize the advantages of the web and the excellence of HTTP. It means that a resource is specified through an HTTP URI and the CRUD operation (Four basic actions that a software program should be able to do including Create, Read, Update, and Delete) of the specified resource is applied through an HTTP method (POST, GET, PUT, DELETE).
 Therefore, REST may be thought of as an architecture made up of Resources, Verbs, and Representations. The use of REST increases code reusability and allows for a complete separation of work between the frontend and the backend.
 
-2) Representation in HTTP?
+< Representation in HTTP? >
 For example, there's request & response from the server as below.
 
-  < Client Request Example >
+  - Client Request Example
   GET https://example.org/greeting
   Host: example.org
   Accept: text/plain, text/html; q=0.9 *; q=0.1
   Accept-Language: en, ko; q=0.9, *; q=0.1
   
-  < Server Response Example >
+  - Server Response Example 
   HTTP/1.1 200 OK
   Content-Length: 6
   Date: Sat, 14 Jan 2023 10:20:47 GMT
@@ -38,7 +38,7 @@ There are two things to keep in mind here.
 First point: a transfer is not the same as a state Transfer(transition). When a user clicks on a link, the state of the web application changes, but Transfer refers to a transfer between network components, not that transition. In this case, it refers to the transfer(transmission) of web pages from the server.
 Second point: Although both the state of a resource and the state of an application are conveyed by the same word "state," they are fundamentally distinct. Previously, representation was defined as "information that represents the condition of a certain resource at a specific point in time." It refers to the status of the resource, not the application. The application's state refers to the point at which the web application transitioned from rendering web page A to rendering web page B.
 
-3) Features of REST API
+< Features of REST API >
 REST architecture has the following characteristics.
 
   (1) Uniform Interface
