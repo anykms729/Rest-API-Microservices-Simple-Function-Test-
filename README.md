@@ -7,19 +7,19 @@ Therefore, REST may be thought of as an architecture made up of Resources, Verbs
 < Representation in HTTP? >
 For example, there's request & response from the server as below.
 
-  - Client Request Example
-  GET https://example.org/greeting
-  Host: example.org
-  Accept: text/plain, text/html; q=0.9 *; q=0.1
+  - Client Request Example:
+  GET https://example.org/greeting --
+  Host: example.org --
+  Accept: text/plain, text/html; q=0.9 *; q=0.1 --
   Accept-Language: en, ko; q=0.9, *; q=0.1
   
-  - Server Response Example 
-  HTTP/1.1 200 OK
-  Content-Length: 6
-  Date: Sat, 14 Jan 2023 10:20:47 GMT
-  Last-Modified: Sat, 14 Jan 2023 00:00:07 GMT
-  Content-Type: text/plain
-  Content-Language: en
+  - Server Response Example: 
+  HTTP/1.1 200 OK --
+  Content-Length: 6 --
+  Date: Sat, 14 Jan 2023 10:20:47 GMT --
+  Last-Modified: Sat, 14 Jan 2023 00:00:07 GMT --
+  Content-Type: text/plain --
+  Content-Language: en --
   "My name is Miso"
   
 When a resource transfer request is received via Get Request, the server delivers one representation of the target resource.
