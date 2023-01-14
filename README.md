@@ -41,22 +41,22 @@ Second point: Although both the state of a resource and the state of an applicat
 < Features of REST API >
 REST architecture has the following characteristics.
 
-  (1) Uniform Interface
+  (1) Uniform Interface: 
   It is an architectural style that performs operations on resources specified by URI through a unified and limited interface. It can be used on all platforms that follow the HTTP standard protocol.
 
-  (2) Stateless
+  (2) Stateless: 
   It simplifies implementation as it only needs to process requests without storing or managing state information (cookies, sessions) for tasks.
 
-  (3) Cacheable
+  (3) Cacheable:
   As it uses the web standard protocol as it is, it can utilize the existing infrastructure and can use the caching function.
 
-  (4) Self-descriptiveness
+  (4) Self-descriptiveness:
   It offers a framework for self-expression that can be easily understood by reading REST API messages.
 
-  (5) Client-Server
+  (5) Client-Server:
   Mutual reliance is reduced because the roles of the server that has the resource and the client that requests the resource are clearly distinguished.
    - Server: Provides API and is responsible for processing and storing business logic
    - Client: Directly manages and is responsible for user authentication or status information
 
-  (6) Layered System
+  (6) Layered System:
   A REST server can be composed of multiple layers, and can have structural flexibility by adding security, load balancing, and encryption layers, and can use network-based intermediate media such as PROXY and gateway.
