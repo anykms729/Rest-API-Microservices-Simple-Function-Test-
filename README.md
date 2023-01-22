@@ -1,10 +1,10 @@
-This repo is all about RESTful API using Spring Boot
-
-< What is RESTful API >
+<b>< What is RESTful API ></b><br>
+<br>
 REST, an abbreviation of Representational State Transfer, is an architecture that can properly utilize the advantages of the web and the excellence of HTTP. It means that a resource is specified through an HTTP URI and the CRUD operation (Four basic actions that a software program should be able to do including Create, Read, Update, and Delete) of the specified resource is applied through an HTTP method (POST, GET, PUT, DELETE).
 Therefore, REST may be thought of as an architecture made up of Resources, Verbs, and Representations. The use of REST increases code reusability and allows for a complete separation of work between the frontend and the backend.
 
-< Representation in HTTP >
+<b>< Representation in HTTP ></b><br>
+<br>
 For example, there's request & response from the server as below.
 
   - Client Request Example:
@@ -21,7 +21,7 @@ For example, there's request & response from the server as below.
   Content-Type: text/plain --
   Content-Language: en --
   "My name is Miso"
-  
+  <br>
 When a resource transfer request is received via Get Request, the server delivers one representation of the target resource.
 "Representation" refers to data that represents the condition of a resource at a certain moment in time. One representation is made up of representation data and metadata. 
 From Above Request-Response example, "My name is Miso" is representation data in the above example, while "Content-Type: text/plain" and "Content-Language: en" are representation metadata.
@@ -38,25 +38,26 @@ There are two things to keep in mind here.
 First point: a transfer is not the same as a state Transfer(transition). When a user clicks on a link, the state of the web application changes, but Transfer refers to a transfer between network components, not that transition. In this case, it refers to the transfer(transmission) of web pages from the server.
 Second point: Although both the state of a resource and the state of an application are conveyed by the same word "state," they are fundamentally distinct. Previously, representation was defined as "information that represents the condition of a certain resource at a specific point in time." It refers to the status of the resource, not the application. The application's state refers to the point at which the web application transitioned from rendering web page A to rendering web page B.
 
-< Features of REST API >
+<b>< Features of REST API ></b><br>
+<br>
 REST architecture has the following characteristics.
 
-  (1) Uniform Interface: 
+  - Uniform Interface<br> 
   It is an architectural style that performs operations on resources specified by URI through a unified and limited interface. It can be used on all platforms that follow the HTTP standard protocol.
 
-  (2) Stateless: 
+  - Stateless<br>
   It simplifies implementation as it only needs to process requests without storing or managing state information (cookies, sessions) for tasks.
 
-  (3) Cacheable:
+  - Cacheable<br>
   As it uses the web standard protocol as it is, it can utilize the existing infrastructure and can use the caching function.
 
-  (4) Self-descriptiveness:
+  - Self-descriptiveness<br>
   It offers a framework for self-expression that can be easily understood by reading REST API messages.
 
-  (5) Client-Server:
-  Mutual reliance is reduced because the roles of the server that has the resource and the client that requests the resource are clearly distinguished.
-   - Server: Provides API and is responsible for processing and storing business logic
-   - Client: Directly manages and is responsible for user authentication or status information
+  - Client-Server<br>
+  Mutual reliance is reduced because the roles of the server that has the resource and the client that requests the resource are clearly distinguished.<br>
+   (1) Server: Provides API and is responsible for processing and storing business logic<br>
+   (2) Client: Directly manages and is responsible for user authentication or status information
 
-  (6) Layered System:
+  - Layered System<br>
   A REST server can be composed of multiple layers, and can have structural flexibility by adding security, load balancing, and encryption layers, and can use network-based intermediate media such as PROXY and gateway.
